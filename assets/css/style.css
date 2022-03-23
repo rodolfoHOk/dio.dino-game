@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  bottom: 50vh;
+  background-image: url(../images/background.png);
+  background-repeat: repeat-x;
+  animation: slide-right 780s infinite linear;
+}
+
+.dino {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 4px;
+  left: 16px;
+  background-image: url(../images/dino.png);
+}
+
+.cactus {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 4px;
+  background-image: url(../images/cactus.png);
+}
+
+.game-over {
+  display: none;
+  text-align: center;
+  color: #666666;
+  margin-top: 10vh;
+  font-family: "Rubik Beastly", sans-serif;
+  font-size: 32px;
+}
+
+@keyframes slide-right {
+  from {
+    background-position: 70000%;
+  }
+  to {
+    background-position: 0;
+  }
+}
